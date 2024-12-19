@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+Product Page
+{% endblock %}
+
+{% block body %}
+<img src="static/images/{{product['img']}}">
+
+<p>
+    Name: {{ product['name'] }}
+</p>
+<p>
+    Price: {{ product['price'] }}
+</p>
+
+{% endblock %}

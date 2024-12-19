@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+Main Page
+{% endblock %}
+
+
+{% block body %}
+
+<div class="row">
+    {% for post in posts %}
+    <div class="col-md-3 mb-3 mt-3 d-flex align-items-stretch">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <h5 class="card-text">{{ post['title'] }}</h5>
+                <p class="card-title">{{ post['content'] }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
